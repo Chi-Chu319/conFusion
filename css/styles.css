@@ -1,3 +1,13 @@
+/* make room for the navbar */
+body{
+    padding: 50px 0px 0px 0px;
+    z-index:0;
+}
+
+.navbar-dark {
+    background-color: #512DA8;
+}
+
 .row-header{
     /* 0px for up and bottom. aligned in middle for left and right */
     margin: 0px auto;
