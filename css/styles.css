@@ -70,7 +70,7 @@ address{
 }
 
 /* absolute will place the element to the the absolute position specified within its parent's restricition */
-#carouselButtons{
+#carouselButton{
     right:0px;
     position: absolute;
     bottom: 0px;
