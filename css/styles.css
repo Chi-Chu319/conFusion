@@ -68,3 +68,11 @@ address{
     transform: translateY(-50%);
     bottom: initial;
 }
+
+/* absolute will place the element to the the absolute position specified within its parent's restricition */
+#carouselButtons{
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
