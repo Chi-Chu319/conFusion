@@ -70,14 +70,15 @@ body{
 .class1 .class2 {
     
 }   
-# select the element with has both class1 and class2
-(same for #id and html element selectors)
 
+
+# select all the element with the class name class2 that are decendents of the element with an class class1
 
 However,
 
 .class1{ 
     &.class2{  
+        // & works like a connector between two classes
     }
 }
 
@@ -86,8 +87,9 @@ However,
 .class1.class2 {
     
 }   
-# select all the element with the class name class2 that are decendents of the element with an class class1
 
+# select the element with has both class1 and class2
+(same for #id and html element selectors)
 
 */
 .carousel{
