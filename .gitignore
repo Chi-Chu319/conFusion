@@ -1,11 +1,6 @@
-node_modules/*
+node_modules
 peer_reviewings
 screenshots
 
-!node_modules/jquery
-!node_modules/popper.js
-!node_modules/bootstrap
-!node_modules/font-awesome
-!node_modules/bootstrap-social
 
 
