@@ -1,12 +1,11 @@
-node_modules
+node_modules/*
 peer_reviewings
 screenshots
 
-!node_modules/jquery/dist/jquery.slim.min.js
-!node_modules/popper.js/dist/umd/popper.min.js
-!node_modules/bootstrap/dist/js/bootstrap.min.js
-!node_modules/bootstrap/dist/css/bootstrap.min.css
-!node_modules/font-awesome/css/font-awesome.min.css
-!node_modules/bootstrap-social/bootstrap-social.css
+!node_modules/jquery
+!node_modules/popper.js
+!node_modules/bootstrap
+!node_modules/font-awesome
+!node_modules/bootstrap-social
 
 
