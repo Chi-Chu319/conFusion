@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
     
+        <!-- build:css css/main.css -->
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
@@ -15,7 +16,7 @@
         <!-- icon fonts -->
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-
+        <!-- endbuild -->
     </head>
 
 <body>
@@ -96,34 +97,34 @@
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title">Reserve a Table</h2>
-                        <button type="button" class="close" data-dismiss="modal">
-                            &times;
-                        </button>
+                    <h3 class="modal-title">Reserve a Table</h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
                 </div>
                 <div class="modal-body">
                     <form>
-                        <div class="form-group row">
+                        <div class="form-group row vertical-center">
                             <label for="num-guest" class="col-md-2 col-form-label">Number of Guest</label>
-                            <div class="col-md-10" id="num-guest">
+                            <div class="col-md align-self-center" id="num-guest">
                                 <!-- name must be the same but each option should have indivdual Id -->
                                 <!-- 1 -->
-                                <div class="form-check  form-check-inline">
+                                <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="num" id="num=1">
                                     <label class="form-check-label" for="num=1">1</label>
                                 </div>
                                 <!-- 2 -->    
-                                <div class="form-check  form-check-inline">
+                                <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="num" id="num=2">
                                     <label class="form-check-label" for="num=2">2</label>
                                 </div>    
                                 <!-- 3 -->
-                                <div class="form-check  form-check-inline">
+                                <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="num" id="num=3">
                                     <label class="form-check-label" for="num=3">3</label>
                                 </div>
                                 <!-- 4 -->
-                                <div class="form-check  form-check-inline">
+                                <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="num" id="num=4">
                                     <label class="form-check-label" for="num=4">4</label>
                                 </div>
@@ -133,7 +134,7 @@
                                     <label class="form-check-label" for="num=5">5</label>
                                 </div>
                                 <!-- 6 -->
-                                <div class="form-check  form-check-inline">
+                                <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="num" id="num=6">
                                     <label class="form-check-label" for="num=6">6</label>
                                 </div>                            
@@ -141,21 +142,23 @@
                         </div>
 
                         <div class="form-group row">
-                            <label class="col-md-2" for="datetime">
+                            <label class="col-md-2" for="smk">
                                 Section
                             </label>
-                            <div class="col-md-10 btn-group btn-group-toggle" data-toggle="buttons">
-                                <label class="form-check-label btn btn-success active">
-                                    <input class="form-check-input" type="radio" name="options" autocomplete="off" checked>Non-smoking
-                                </label>
-                                <label class="form-check-label btn btn-danger ">
-                                    <input class="form-check-input" type="radio" name="options" autocomplete="off" >Smoking
-                                </label>
+                            <div class="col-md" id="smk">
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons" id="smk">
+                                    <label class="form-check-label btn btn-success active">
+                                        <input class="form-check-input" type="radio" name="nonsmoking" id="nonsmoking" autocomplete="off" checked>Non-smoking
+                                    </label>
+                                    <label class="form-check-label btn btn-danger ">
+                                        <input class="form-check-input" type="radio" name="smoking" id="smoking" autocomplete="off" >Smoking
+                                    </label>
+                                </div>
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label class="col-md-2" for="datetime">
+                            <label class="col-md-2" for="date">
                                 Date and Time
                             </label>
                             <div class="col-md-4">
@@ -379,12 +382,14 @@
            </div>
         </div>
     </footer>
+    <!-- build:js js/main.js -->
     <!-- the js codes are put at the end of the index.html to speed up the rendering of the page (rendering bootstrap classes are put in the head) as the code will take time to execute -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <!-- endbuild -->
     <!-- <script>
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
